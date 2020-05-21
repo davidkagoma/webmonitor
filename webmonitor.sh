@@ -16,7 +16,7 @@
 # 5. Inside crontab, set running scheme `*/5 * * * *  /full_path_to_script/webmonitor.sh  >> /var/log/cron.webmonitor.log 2>&1 ` 
 #
 
-status = (curl -I https://pfmis.org/live/login.php)
+status = (curl -I https://server.com/initial_endpoint)
 
 if [[ $status ~= "HTTP/2 200" ]]
 then 
